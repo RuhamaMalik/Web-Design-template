@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Template Design</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="layout">
+    <div class="header">
+      <a href="#" class="logo">gadeg<span>Groove</span></a>
+      <div class="tabs">
+        <a href="#home" onclick="setActiveTab(this); toggleMenu()">Home</a>
+        <a href="#about" onclick="setActiveTab(this);toggleMenu()">About</a>
+        <a href="#gallery" onclick="setActiveTab(this); toggleMenu()">Gallery</a>
+        <a href="#contact" onclick="setActiveTab(this); toggleMenu()">Contact</a>
+      </div>
+      <i class="fas fa-bars menuIcon" onclick="toggleMenu()"></i>
+    </div>
+
+    <!-- <div class="sidebar">sidebar</div> -->
+    <div class="content">
+      <div class="row" id="home">
+        <div class="content">
+          <h1>
+            Home page <br />
+            <span>Landing page</span>
+          </h1>
+          <p class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequatur illo ipsam, debitis ullam recusandae et voluptatem
+            cupiditate accusamus praesentium beatae. Lorem ipsum, dolor sit
+            amet consectetur adipisicing elit. Aspernatur animi tempore fuga
+            quibusdam labore eos nulla, quaerat consequatur ipsa expedita
+            autem at eaque maxime nesciunt doloremque velit perferendis
+            sapiente amet!
+          </p>
+          <div class="btns">
+            <button class="btn">Download the App</button>
+            <button class="btn btn2">Discover more</button>
+          </div>
+        </div>
+        <div class="img">
+          <img id="movingImage1" class="move-up" src="images/phone1.png" />
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+
+    <div class="content">
+      <div class="contentHead">
+        <h2>debitis, <span>ipsum</span></h2>
+        <p class="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+          blanditiis?
+        </p>
+      </div>
+      <div class="row about" id="home">
+        <div class="img">
+          <img id="movingImage2" class="move-up" src="images/phone2.png" />
+        </div>
+        <div class="content">
+          <p class="para">
+            <b><i class="fa fa-flask"></i> consectetur adipisicing</b> <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequatur illo ipsam, debitis ullam recusandae et voluptatem.
+          </p>
+          <p class="para">
+            <b><i class="fa fa-globe"></i> ullam recusandae</b> <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequatur illo ipsam, debitis ullam recusandae et voluptatem.
+          </p>
+          <p class="para">
+            <b><i class="fa fa-tint"></i> consectetur adipisicing</b> <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequatur illo ipsam, debitis ullam recusandae et voluptatem.
+          </p>
+
+          <p class="para">
+            <b><i class="fa fa-cogs"></i> Responsive Dectetur adipisicing</b>
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequatur illo ipsam, debitis ullam recusandae et voluptatem.
+          </p>
+          <p class="para" id="about">
+            <b><i class="fa fa-crop"></i> consectetur adipisicing</b> <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequatur illo ipsam, debitis ullam recusandae et voluptatem.
+          </p>
+        </div>
+      </div>
+
+      <!-- /////////////////////ABOUT 2  -->
+      <div class="content border">
+        <div class="contentHead">
+          <h2>amet, <span>consectetur</span></h2>
+          <p class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Commodi, blanditiis?
+          </p>
+        </div>
+        <div class="row about " id="home">
+
+          <div class="content">
+            <h1>
+              <span>consectetur adipisicing</span>
+            </h1>
+            <p class="para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur illo ipsam, debitis ullam recusandae et voluptatem
+              cupiditate accusamus praesentium beatae. Lorem ipsum, dolor sit
+              amet consectetur adipisicing elit. Aspernatur animi tempore fuga
+              quibusdam labore eos nulla, quaerat consequatur ipsa expedita
+              autem at eaque maxime nesciunt doloremque velit perferendis
+              sapiente amet! Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Consequatur illo ipsam, debitis ullam
+              recusandae et voluptatem cupiditate accusamus praesentium
+              beatae. Lorem ipsum, dolor sit amet consectetur adipisicing
+              elit. Aspernatur animi tempore fuga quibusdam labore eos nulla,
+              quaerat consequatur ipsa expedita autem at eaque maxime nesciunt
+              doloremque velit perferendis sapiente amet!
+            </p>
+            <div class="btns">
+              <button class="btn">Download the App</button>
+              <button class="btn btn2">Discover more</button>
+            </div>
+          </div>
+          <div class="img">
+            <img id="movingImage3" class="move-up" src="images/phone3.png" />
+          </div>
+        </div>
+      </div>
+
+
+      <!-- About 3 -->
+      <div class="transparent" id="numbers-section">
+        <h2 style="color: white;">SOME FACTS ABOUT US</h2>
+        <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum beatae unde ad voluptas
+          illo molestiae?</p>
+        <div class="flex">
+          <p class="item">
+            <i class="fa-solid fa-cloud-arrow-down"></i>
+            <b id="downloads">765</b>
+            <span>DOWNLOADS</span>
+          </p>
+          <p class="item">
+            <i class="fa-solid fa-heart"></i>
+            <b id="people-rated">981</b>
+            <span>PEOPLE RATED 5</span>
+          </p>
+          <p class="item">
+            <i class="fa-brands fa-twitter"></i>
+            <b id="followers">937</b>
+            <span>FOLLOWERS</span>
+          </p>
+        </div>
+      </div>
+
+
+      <!-- //////////////// ABOUT 4 -->
+
+      <div class="transparent border">
+        <h2> consectetur <span>adipisicing</span></h2>
+        <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Et neque ullam voluptatem inventore consectetur quo odio aliquid? Temporibus dolores aperiam
+          velit beatae, hic consectetur officia minus corrupti aut voluptate. Eaque!
+          Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, nam dolorem, dolorum
+          deleniti reprehenderit ut provident, odit quae dicta quasi similique a consequatur incidunt. Officia modi ad
+          animi vero ratione?
+          amet consectetur, adipisicing elit. Totam, placeat. Nihil quisquam doloribus, consectetur libero perferendis
+          sapiente corporis, ratione recusandae dolor accusantium animi, modi maxime ad pariatur iure beatae ut.
+          Voluptatum beatae unde ad voluptas illo molestiae?</p>
+
+      </div>
+      <!-- ////////////////// ABOUT 5 -->
+      <div class="content" style="background-color: black;">
+        <div class="contentHead" style="background-color: black;">
+          <h1>debitis, <span>ipsum</span></h1>
+          <p class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+            blanditiis?
+          </p>
+        </div>
+        <div class="row about " style="background-color: black;">
+          <div class="img">
+            <img id="movingImage4" class="move-up" src="images/phone2.png" />
+          </div>
+          <div class="content ">
+            <p class="para abc">
+              <b><i class="fa fa-flask"></i> consectetur adipisicing</b> <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur illo ipsam, debitis ullam recusandae et voluptatem.
+            </p>
+            <p class="para abc">
+              <b><i class="fa fa-globe"></i> ullam recusandae</b> <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur illo ipsam, debitis ullam recusandae et voluptatem.
+            </p>
+            <p class="para abc">
+              <b><i class="fa fa-tint"></i> consectetur adipisicing</b> <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur illo ipsam, debitis ullam recusandae et voluptatem.
+            </p>
+            <div class="btns">
+              <button class="btn">Download the App</button>
+              <button class="btn btn2">Discover more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //////////////// ABOUT 6 -->
+      <div class="transparent" id="numbers-section">
+        <h2 style="color: white;">ullam recus illo</h2>
+        <p class="para" style="color: rgb(214, 219, 219); line-height: 28px;">Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Debitis ex quia et voluptate,
+          eveniet expedita inventore enim voluptas <br>neque atque! Voluptatum beatae unde ad voluptas illo molestiae?
+        </p>
+        <button class="btn btn2">Discover more</button>
+      </div>
+
+
+      <!-- /////////////  GALLERY -->
+      <h2 style="padding-top: 2em;" id="gallery"> <i class="fa-solid fa-camera"></i> <span>Gallery</span></h2>
+
+      <div class="gallery">
+        <div class="octagonWrap">
+          <div class="octagon">
+            <img src="images/gallery1.jpg" alt="Image 1" class="gallery-img">
+          </div>
+        </div>
+        <div class="octagonWrap">
+          <div class="octagon">
+            <img src="images/gallery2.jpg" alt="Image 1" class="gallery-img">
+          </div>
+        </div>
+
+        <div class="octagonWrap">
+          <div class="octagon">
+            <img src="images/gallery3.jpg" alt="Image 1" class="gallery-img">
+          </div>
+        </div>
+        <div class="octagonWrap">
+          <div class="octagon">
+            <img src="images/gallery4.jpg" alt="Image 1" class="gallery-img">
+          </div>
+        </div>
+        <div class="octagonWrap">
+          <div class="octagon">
+            <img src="images/gallery5.webp" alt="Image 1" class="gallery-img">
+          </div>
+        </div>
+        <div class="octagonWrap">
+          <div class="octagon">
+            <img src="images/gallery6.png" alt="Image 1" class="gallery-img">
+          </div>
+        </div>
+        <div class="octagonWrap">
+          <div class="octagon">
+            <img src="images/gallery7.jpg" alt="Image 1" class="gallery-img">
+          </div>
+        </div>
+        <div class="octagonWrap">
+          <div class="octagon">
+            <img src="images/gallery8.png" alt="Image 1" class="gallery-img">
+          </div>
+        </div>
+        <div class="octagonWrap">
+          <div class="octagon">
+            <img src="images/gallery9.webp" alt="Image 1" class="gallery-img">
+          </div>
+        </div>
+        <div class="octagonWrap">
+          <div class="octagon">
+            <img src="images/gallery10.png" alt="Image 1" class="gallery-img">
+          </div>
+        </div>
+        <div class="octagonWrap">
+          <div class="octagon">
+            <img src="images/gallery11.jpg" alt="Image 1" class="gallery-img">
+          </div>
+        </div>
+        <div class="octagonWrap">
+          <div class="octagon">
+            <img src="images/gallery12.jpg" alt="Image 1" class="gallery-img">
+          </div>
+        </div>
+        <div id="popup" class="popup">
+          <span class="close">&times;</span>
+          <img id="popup-img" class="popup-content" alt="Popup Image">
+        </div>
+      </div>
+
+      <div class="contactParent" id="contact">
+        <div class="contact">
+          <div class="form">
+            <h2>Send us a message</h2>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Subject">
+            <textarea cols="30" rows="10" placeholder="Message"></textarea>
+            <button class=" btn btn2">Send Message</button>
+          </div>
+
+          <div class="ct">
+            <span>Contact us</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, animi.</p>
+            <div class="data">
+              <div class="d">
+                <i class="fa-solid fa-location-dot"></i>
+                <p><b>Address:</b> 198West 21th Street , Suite 721 New York 88787</p>
+              </div>
+              <div class="d">
+                <i class="fa-solid fa-phone"></i>
+                <p><b>Phone:</b>2767688787</p>
+              </div>
+              <div class="d">
+                <i class="fa-solid fa-reply-all"></i>
+                <p><b>Email:</b> abc@gmail.com </p>
+              </div>
+              <div class="d">
+                <i class="fa-solid fa-globe"></i>
+                <p><b>Website:</b> https://abc.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <section class="footer">
+
+        <div class="box-container">
+    
+          <div class="box">
+            <h3>quick links</h3>
+            <a href="#"><i class="fas fa-chevron-right"></i>home</a>
+            <a href="#"><i class="fas fa-chevron-right"></i>about</a>
+            <a href="#"><i class="fas fa-chevron-right"></i>gallery</a>
+            <a href="#"><i class="fas fa-chevron-right"></i>contact</a>
+          </div>
+          <div class="box">
+            <h3>our services</h3>
+            <a href="#"><i class="fas fa-chevron-right"></i>sit Voluptatum</a>
+            <a href="#"><i class="fas fa-chevron-right"></i>sit amet</a>
+            <a href="#"><i class="fas fa-chevron-right"></i>quidem possimus</a>
+            <a href="#"><i class="fas fa-chevron-right"></i>possimus illum</a>
+            <a href="#"><i class="fas fa-chevron-right"></i>quidem possimus</a>
+          </div>
+    
+          <div class="box">
+            <h3>contact info</h3>
+            <a href="#"><i class="fas fa-phone"></i>+9211-111111111</a>
+            <a href="#"><i class="fas fa-phone"></i>+9200-000000000</a>
+            <a href="#"><i class="fas fa-envelope"></i>avc@gmail.com</a>
+            <a href="#"><i class="fas fa-envelope"></i>xuz@gmail.com</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> karachi, Pakistan - 71500</a>
+          </div>
+    
+          <div class="box">
+            <h3>follow us</h3>
+            <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+            <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+            <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+            <a href="#"><i class="fab fa-pinterest"></i>pinterest</a>
+          </div>
+    
+        </div>
+    
+    <div class="credit">
+      created by <span>ruhama gull</span> | all rights reserved.
+    </div>
+    
+      </section>
+    
+      <!-- footer section ends-->    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
