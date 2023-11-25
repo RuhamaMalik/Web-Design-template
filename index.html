@@ -224,73 +224,12 @@
         </p>
         <button class="btn btn2">Discover more</button>
       </div>
-
+    </div>
 
       <!-- /////////////  GALLERY -->
-      <h2 style="padding-top: 2em;" id="gallery"> <i class="fa-solid fa-camera"></i> <span>Gallery</span></h2>
+      <h2 style="padding-top: 2em;" > <i class="fa-solid fa-camera"></i> <span>Gallery</span></h2>
 
-      <div class="gallery">
-        <div class="octagonWrap">
-          <div class="octagon">
-            <img src="images/gallery1.jpg" alt="Image 1" class="gallery-img">
-          </div>
-        </div>
-        <div class="octagonWrap">
-          <div class="octagon">
-            <img src="images/gallery2.jpg" alt="Image 1" class="gallery-img">
-          </div>
-        </div>
-
-        <div class="octagonWrap">
-          <div class="octagon">
-            <img src="images/gallery3.jpg" alt="Image 1" class="gallery-img">
-          </div>
-        </div>
-        <div class="octagonWrap">
-          <div class="octagon">
-            <img src="images/gallery4.jpg" alt="Image 1" class="gallery-img">
-          </div>
-        </div>
-        <div class="octagonWrap">
-          <div class="octagon">
-            <img src="images/gallery5.webp" alt="Image 1" class="gallery-img">
-          </div>
-        </div>
-        <div class="octagonWrap">
-          <div class="octagon">
-            <img src="images/gallery6.png" alt="Image 1" class="gallery-img">
-          </div>
-        </div>
-        <div class="octagonWrap">
-          <div class="octagon">
-            <img src="images/gallery7.jpg" alt="Image 1" class="gallery-img">
-          </div>
-        </div>
-        <div class="octagonWrap">
-          <div class="octagon">
-            <img src="images/gallery8.png" alt="Image 1" class="gallery-img">
-          </div>
-        </div>
-        <div class="octagonWrap">
-          <div class="octagon">
-            <img src="images/gallery9.webp" alt="Image 1" class="gallery-img">
-          </div>
-        </div>
-        <div class="octagonWrap">
-          <div class="octagon">
-            <img src="images/gallery10.png" alt="Image 1" class="gallery-img">
-          </div>
-        </div>
-        <div class="octagonWrap">
-          <div class="octagon">
-            <img src="images/gallery11.jpg" alt="Image 1" class="gallery-img">
-          </div>
-        </div>
-        <div class="octagonWrap">
-          <div class="octagon">
-            <img src="images/gallery12.jpg" alt="Image 1" class="gallery-img">
-          </div>
-        </div>
+      <div class="gallery" id="gallery">
         <div id="popup" class="popup">
           <span class="close">&times;</span>
           <img id="popup-img" class="popup-content" alt="Popup Image">
@@ -301,13 +240,17 @@
         <div class="contact">
           <div class="form">
             <h2>Send us a message</h2>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <input type="text" placeholder="Subject">
-            <textarea cols="30" rows="10" placeholder="Message"></textarea>
-            <button class=" btn btn2">Send Message</button>
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="subject" placeholder="Subject" required>
+            <textarea id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+            <button type="button" class="btn btn2" onclick="submitForm()">Send Message</button>
           </div>
-
+          <div id="success" class="success">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <div id="popup-content">mmsd s,dms,d,smsm,smm</div>
+            <button class="btn btn2" onclick="closePopup()">ok !</button>
+          </div>
           <div class="ct">
             <span>Contact us</span>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, animi.</p>
@@ -333,7 +276,7 @@
         </div>
       </div>
 
-
+      
       <section class="footer">
 
         <div class="box-container">
@@ -381,7 +324,7 @@
     
       </section>
     
-      <!-- footer section ends-->    </div>
+      <!-- footer section ends-->   
 
     <script src="index.js"></script>
 </body>
