@@ -204,10 +204,9 @@ function submitForm() {
   }
 
   const popupContent = document.getElementById("popup-content");
-  popupContent.innerHTML = `<p>Name: <b>${name}</b></p><p>Email: <b>${email}</b></p>`;
-
+  popupContent.innerHTML = email;
   const success = document.getElementById("success");
-  success.style.display = "block";
+  success.style.display = "flex";
 }
 function closePopup() {
   const success = document.getElementById("success");
