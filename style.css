@@ -22,7 +22,21 @@ h2 {
 h2 span {
   color: rgb(81, 211, 81);
 }
+.back-to-top{
+  position: sticky;
+  top: 90%;
+  left: 94%;
+  height: 50px;
+  width: 50px;
+  background-color: rgb(81, 211, 81);
+  border-radius: 50%;
+  z-index: 1000;
+  display: flex;align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5em;
 
+}
 .btn {
   outline: none;
   border: 1px solid rgb(81, 211, 81);
@@ -560,6 +574,14 @@ h2 span {
     width: 90vw;
     padding: 1.2em;
   }
+  .back-to-top{
+    /* top: 84%;
+    left: 92%; */
+    height: 40px;
+    width: 40px;
+  
+  }
+  
 }
 
 @media (max-width: 430px) {

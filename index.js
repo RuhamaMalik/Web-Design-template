@@ -74,7 +74,7 @@ window.addEventListener("scroll", () => {
   var windowHeight = window.innerHeight;
 
   if (window.scrollY >= sectionTop - windowHeight) {
-    console.log("Scroll Triggered!");
+    // console.log("Scroll Triggered!");
     updateNumbers(0, 0, 0);
     startIncrementing();
   }
@@ -196,18 +196,23 @@ function submitForm() {
     console.log(data);
     resetForm();
   }
-  function resetForm() {
-    document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("subject").value = "";
-    document.getElementById("message").value = "";
-  }
-
   const popupContent = document.getElementById("popup-content");
-  popupContent.innerHTML = email;
   const success = document.getElementById("success");
-  success.style.display = "flex";
+  if (data) {
+    popupContent.innerHTML = email;
+    success.style.display = "flex";
+  } else {
+    success.style.display = "none";
+  }
 }
+
+function resetForm() {
+  document.getElementById("name").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("subject").value = "";
+  document.getElementById("message").value = "";
+}
+
 function closePopup() {
   const success = document.getElementById("success");
   success.style.display = "none";
