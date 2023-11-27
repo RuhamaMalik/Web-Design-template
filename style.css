@@ -575,11 +575,13 @@ h2 span {
     padding: 1.2em;
   }
   .back-to-top{
-    /* top: 84%;
-    left: 92%; */
     height: 40px;
     width: 40px;
-  
+  }
+  .popup-content {
+    width: 90vw;
+    max-width: 600px;
+    /* height: 60vmax; */
   }
   
 }
